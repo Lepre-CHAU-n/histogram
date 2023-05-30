@@ -1,7 +1,15 @@
+//Issues to fix: 100 max error (one case)
+//histogram color not updated, error
+
 var grades = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.22, 88.33, 9.03,
     49.93, 52.34, 53.11, 50.10, 88.88, 55.32, 55.69, 61.68, 70.44, 70.54, 90.0, 71.11, 80.01];
+// var grades= []; 
 var histogramContainer = document.querySelector('.histogram');
 var enterGradeInput = document.getElementById('enterGrade');
+
+
+
+
 var errorMessage = document.getElementById('errorMessage');
 var errorMessage1 = document.getElementById('errorMessage1');
 
@@ -84,12 +92,17 @@ function validateLowerBounds(lowerBounds) {
 
 function calculateHistogram(grades, lowerBounds) {
    var histogram = [];
-   for (var i = 0; i < lowerBounds.length-1; i++) {
+   for (var i = 0; i < lowerBounds.length; i++) {
        var count = 0;
+       var a = 0;
        for (var j = 0; j < grades.length; j++) {
-           if(grades[j] <= lowerBounds[i] && grades[j] > lowerBounds[i+1]){
-               count++;
-           }
+        if (grades[j] > lowerBounds[i]) {
+            a++;
+        } else if(grades[j] === lowerBounds[0]){
+            count++;
+        }  else if (grades[j] >= lowerBounds[i + 1] && grades[j] < lowerBounds[i]) {
+            count++;
+        } 
        }
        histogram.push(count);
    }
@@ -140,10 +153,10 @@ function displayHistogram(histogram) {
 }
 
 enterGradeInput.addEventListener('keydown', function(event) {
-   var invalidChars = ['e', 'E', '+', '-'];
-   if (invalidChars.includes(event.key)){
-       event.preventDefault();
-   }
+    var invalidChars = ['e', 'E', '+', '-'];
+    if (invalidChars.includes(event.key)){
+        event.preventDefault();
+    }
 });
 
 enterGradeInput.addEventListener('keyup', function(event) {

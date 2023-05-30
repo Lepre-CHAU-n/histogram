@@ -30,7 +30,7 @@ input[id="enterGrade"] {
     padding: 8px 25px;
 }
   
-.lowerBounds input[type="number"] {
+.lowerBounds input[type="numeric"] {
     width: 60px;
     padding: 5px 10px;
     margin-bottom: 10px;
@@ -76,7 +76,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number] {
+input[type=numeric] {
   -moz-appearance: textfield;
   /* Firefox */
 }

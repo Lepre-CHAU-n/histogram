@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Histogram Generator</title>
-    <link rel="stylesheet" href="/css/histogram.css" />
+    <link rel="stylesheet" href="histogram.css" />
   </head>
   <body>
     <h2>Histogram Generator</h2>
@@ -10,29 +10,29 @@
       <div class="lowerBounds">
         <h3>Lower bounds</h3>
         <label for="Max">Max </label>
-        <input type="number" id="Max" name="Max" size="6" value = "100.00" readonly/><br /><br />
+        <input type="numeric" id="Max" name="Max" size="6" value = "100.00" readonly/><br /><br />
         <label for="A+">A+ </label>
-        <input type="number" id="aPlus" name="aPlus" size="6" value = "95.00"/><br /><br />
+        <input type="numeric" id="aPlus" name="aPlus" size="6" value = "95.00"/><br /><br />
         <label for="A">A </label>
-        <input type="number" id="aNeutral" name="aNeutral" size="6" value = "90.00" /><br /><br />
+        <input type="numeric" id="aNeutral" name="aNeutral" size="6" value = "90.00" /><br /><br />
         <label for="A-">A- </label>
-        <input type="number" id="aMinus" name="aMinus" size="6" value = "85.00" /><br /><br />
+        <input type="numeric" id="aMinus" name="aMinus" size="6" value = "85.00" /><br /><br />
         <label for="B+">B+ </label>
-        <input type="number" id="bPlus" name="bPlus" size="6" value = "80.00" /><br /><br />
+        <input type="numeric" id="bPlus" name="bPlus" size="6" value = "80.00" /><br /><br />
         <label for="B">B </label>
-        <input type="number" id="bNeutral" name="bNeutral" size="6" value = "75.00" /><br /><br />
+        <input type="numeric" id="bNeutral" name="bNeutral" size="6" value = "75.00" /><br /><br />
         <label for="B-">B- </label>
-        <input type="number" id="bMinus" name="bMinus" size="6" value="70.00"/><br /><br />
+        <input type="numeric" id="bMinus" name="bMinus" size="6" value="70.00"/><br /><br />
         <label for="C+">C+ </label>
-        <input type="number" id="cPlus" name="cPlus" size="6" value = "65.00" /><br /><br />
+        <input type="numeric" id="cPlus" name="cPlus" size="6" value = "65.00" /><br /><br />
         <label for="C">C </label>
-        <input type="number" id="cNeutral" name="cNeutral" size="6" value = "60.00"/><br /><br />
+        <input type="numeric" id="cNeutral" name="cNeutral" size="6" value = "60.00"/><br /><br />
         <label for="C-">C- </label>
-        <input type="number" id="cMinus" name="cMinus" size="6"  value = "55.00"/><br /><br />
+        <input type="numeric" id="cMinus" name="cMinus" size="6"  value = "55.00"/><br /><br />
         <label for="D">D </label>
-        <input type="number" id="dNeutral" name="dNeutral" size="6" value = "50.00" /><br /><br />
+        <input type="numeric" id="dNeutral" name="dNeutral" size="6" value = "50.00" /><br /><br />
         <label for="F">F </label>
-        <input type="number" id="fNeutral" name="fNeutral" size="6" value = "0.00" readonly/><br /><br />
+        <input type="numeric" id="fNeutral" name="fNeutral" size="6" value = "0.00" readonly/><br /><br />
         <div id="errorMessage"></div>
       </div>
       <div class="col-two">
@@ -52,12 +52,13 @@
         </div>
         <div class="newGrade">
           <label name="newGrade"><p>New Grade:
-          <input type="number" id="enterGrade" name="enterGrade" size="13" required/></label></p>
+          <input type="numeric" id="enterGrade" name="enterGrade" size="13" required/></label></p>
           <div id="errorMessage1"></div>
         </div>
       </div>
     </div>
   </body>
-  <script src="/js/calculate.js"></script>
+  <script src="./calculate.js"></script>
 </html>
+
 

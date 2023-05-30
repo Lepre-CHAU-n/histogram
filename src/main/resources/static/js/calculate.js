@@ -1,6 +1,3 @@
-//Issues to fix: 100 max error (one case)
-//histogram color not updated, error
-
 var grades = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.22, 88.33, 9.03,
     49.93, 52.34, 53.11, 50.10, 88.88, 55.32, 55.69, 61.68, 70.44, 70.54, 90.0, 71.11, 80.01];
 // var grades= []; 
@@ -31,7 +28,6 @@ function updateHistogram() {
    for (var i = 0; i < variables.length; i++) {
        var element = document.getElementById(variables[i].id);
        var value = parseFloat(element.value);
-
        if (isNaN(value)) {
            errorMessage.textContent = 'Invalid lower bounds. Please make sure the values are in ascending order and/or enter a number for each grade.';
            element.value = ''; // Clear the input text
@@ -175,7 +171,7 @@ enterGradeInput.addEventListener('keyup', function(event) {
 });
 
 
-document.querySelectorAll('.lowerBounds input[type="number"]').forEach(function(input) {
+document.querySelectorAll('.lowerBounds input[type="numeric"]').forEach(function(input) {
   input.addEventListener('keyup', function() {
       updateHistogram();
   });

@@ -80,3 +80,4 @@ input[type=numeric] {
   -moz-appearance: textfield;
   /* Firefox */
 }
+body {background-color: white;}

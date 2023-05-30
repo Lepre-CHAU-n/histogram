@@ -1,0 +1,82 @@
+:root {
+    --card-color: #eaeef1; /*variables to store color values repeated multiple times */
+    --red-text-color: #cc0634cd;
+}
+  
+h2 {
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+h3 {
+    position: relative;
+    bottom: 25px;
+    text-indent: -10px;
+    color: var(--red-text-color);/*references to the variable*/ 
+}
+  
+.lowerBounds {
+    background-color: var(--card-color);
+    width: 350px;
+    padding: 20px;
+}
+.histogram {
+    background-color: var(--card-color);
+    width: 400px;
+    padding: 20px;
+}
+  
+input[id="enterGrade"] {
+    padding: 8px 25px;
+}
+  
+.lowerBounds input[type="number"] {
+    width: 60px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+  
+.histogram label {
+    width: 80px;
+    display: inline-block;
+}
+  
+.lowerBounds label {
+    width: 110px;
+    display: inline-block;
+}
+  
+.container {/*to prevent uneven shrinking of div container gray boxes*/
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.col-two {/*right side of div which affects the right side of the gray boxes*/
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.newGrade {
+    place-content: center;
+    height: 250px;
+    margin-top: 25px;
+    white-space: nowrap;
+    text-indent:10px;
+    background-color: var(--card-color);
+}
+
+p{
+    text-indent:13px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}

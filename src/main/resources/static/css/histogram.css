@@ -78,6 +78,6 @@ input::-webkit-inner-spin-button {
 }
 input[type=numeric] {
   -moz-appearance: textfield;
-  /* Firefoxz*/
+  /* Firefox*/
 }
 body {background-color: white;}

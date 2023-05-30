@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target.assignmentone-0.0.1-SNAPSHOT.jar assignmentone.jar
+COPY --from=build /target/assignmentone-0.0.1-SNAPSHOT.jar assignmentone.jar
 EXPOSE 8000
 ENTRYPOINT ["java","-jar","assignmentone.jar"]

@@ -6,5 +6,7 @@ Here is an example display image:
 <img width="651" alt="image" src="https://github.com/Lepre-CHAU-n/histogram/assets/71118130/4892b7ce-2d2f-47e9-a6cf-01a7d0ac83a9">
 
 Here are the inputed hardcoded grades: 
+
+
 <img width="572" alt="image" src="https://github.com/Lepre-CHAU-n/histogram/assets/71118130/06df8943-2a55-40dc-9b13-337c92bfa20a">
 
